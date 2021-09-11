@@ -1,0 +1,24 @@
+{
+  "name": "appointment-server-api",
+  "version": "1.0.0",
+  "description": "this is the server api for the appointments app",
+  "main": "App.js",
+  "scripts": {
+    "start": "nodemon App.js"
+  },
+  "keywords": [
+    "appointment",
+    "server",
+    "app",
+    "api"
+  ],
+  "author": "Solomon Njobvu",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5",
+    "nodemon": "^2.0.12"
+  }
+}
