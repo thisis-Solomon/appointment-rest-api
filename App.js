@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
-const cors = require("cors")
+const cors = require('cors')
 
 // routes import
 const appointmentRoute = require('./router/appointments')
@@ -14,7 +14,9 @@ app.use(express.json())
 
 // Mongo Database connect
 mongoose
-  .connect(process.env.MONGO_DB_URL)
+  .connect(
+    `mongodb+srv://admin:${process.env.MONGO_DB_PASSWORD}@cluster0.aiwtr.mongodb.net/appointment?retryWrites=true&w=majority`
+  )
   .then(() => console.log('mongodb connected'))
 
 // middlewares
