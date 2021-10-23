@@ -4,14 +4,10 @@
   "description": "this is the server api for the appointments app",
   "main": "App.js",
   "scripts": {
-    "start": "nodemon App.js"
+    "start": "node App.js",
+    "dev": "nodemon App.js"
   },
-  "keywords": [
-    "appointment",
-    "server",
-    "app",
-    "api"
-  ],
+  "keywords": ["appointment", "server", "app", "api"],
   "author": "Solomon Njobvu",
   "license": "MIT",
   "dependencies": {
