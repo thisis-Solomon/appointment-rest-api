@@ -24,5 +24,8 @@ const PORT = process.env.PORT || 9000
 
 // Routes
 app.use('/api/appointment', appointmentRoute)
+app.get('/', (req, res) => {
+  res.send('have your appointment session recorded')
+})
 
 app.listen(PORT, () => console.log('server running', PORT))
